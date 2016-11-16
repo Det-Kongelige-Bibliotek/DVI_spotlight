@@ -17,17 +17,10 @@
 !/log/.keep
 !/tmp/.keep
 /tmp
-/jetty
-/.idea
-/public/pdfs/*.pdf
 .keep
 
 # Ignore Byebug command history file.
 .byebug_history
 
-
-.idea/.generators
-.idea/.rakeTasks
-.idea/misc.xml
-.idea/modules.xml
-.idea/runConfigurations/
+# Ignore all the idea files
+.idea/
