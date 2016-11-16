@@ -5,6 +5,7 @@ This is a Spotlight application, potentially used in the Vest Indies project.
 ## Installation
 ### Prerequisites
 ImageMagick needs to be installed correctly, in order Spotlight to run properly. (Centos instructions)
+
 1. Install ImageMagick
     * yum install ghostscript-fonts
     * cd /usr/local/src
