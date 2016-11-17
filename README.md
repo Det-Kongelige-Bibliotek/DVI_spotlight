@@ -50,3 +50,5 @@ rake spotlight:admin
 ```
 
 Your local application should be up and running. Check it by creating a new exhibit and manually adding items to it.
+
+BE AWARE that the images you upload need to be jpg, jpeg or png and have the right extension at the file name!
