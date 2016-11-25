@@ -2,14 +2,8 @@
 
 (function($) {
   function initOpenSeadragon() {
-
     $('picture[data-openseadragon]').openseadragon();
   }
-
-  $(document).on('page:load', initOpenSeadragon);
-    //the Openseadragon was initialize twice, we removed it on document ready
-    //$(document).ready(initOpenSeadragon);
-
 
   var handler = 'ready';
   if (typeof Turbolinks !== 'undefined' && Turbolinks.supported) {
@@ -21,5 +15,11 @@
       handler = 'page:load ready';
     }
   }
-  $(document).on(handler, initOpenSeadragon);
+
+  $(document).on(handler, function(event){
+      initOpenSeadragon();
+      //clear cache to avoid to have the turbolinks:load event fired twice (and then the initOpenSeadragon initialized twice resulting of two views
+      Turbolinks.clearCache();
+  });
+
 })(jQuery);
