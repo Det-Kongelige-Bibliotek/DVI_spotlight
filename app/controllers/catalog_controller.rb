@@ -39,7 +39,7 @@ class CatalogController < ApplicationController
 
     config.add_field_configuration_to_solr_request!
 
-    config.add_index_field 'title_tdsim', :label => 'Titel',  short_form: false
+    config.add_index_field 'title_tdsim', :label => 'Titel'
     config.add_index_field 'type_tdsim', :label => 'Ressourcetype'
     config.add_index_field 'readable_dat_string_tsim', :label => 'Oprindelsesdato'
     config.add_index_field 'subject_tdsim', :label => 'Emne'
