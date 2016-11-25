@@ -27,7 +27,8 @@ Rails.application.configure do
   end
 
   # Default mail parameters for development environment
-  config.action_mailer.default_options = { host: "localhost:3000", from: "noreply@kb.dk" }
+  config.action_mailer.default_url_options = { host: "localhost:3000"}
+  config.action_mailer.default_options = { from: "noreply@kb.dk" }
   # Do care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
