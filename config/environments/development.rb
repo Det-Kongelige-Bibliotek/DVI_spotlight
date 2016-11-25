@@ -26,6 +26,8 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  # Default mail parameters for development environment
+  config.action_mailer.default_options = { host: "localhost:3000", from: "noreply@kb.dk" }
   # Do care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
