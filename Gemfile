@@ -45,6 +45,7 @@ group :development do
   # Better_errors gives more detailed error trace and binding_of_caller lets in depth variable inspection
   gem 'better_errors'
   gem "binding_of_caller"
+  gem 'xray-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
