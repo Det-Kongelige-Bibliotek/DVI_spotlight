@@ -27,7 +27,7 @@ Rails.application.configure do
   end
 
   # Default mail parameters for development environment
-  config.action_mailer.default_url_options = { host: "localhost:3000"}
+  config.action_mailer.default_url_options = { host: "http://spotlight-test-01.kb.dk:3000"} # Set it to work on the server
   config.action_mailer.default_options = { from: "noreply@kb.dk" }
   # Do care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
