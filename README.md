@@ -57,13 +57,13 @@ BE AWARE that the images you upload need to be jpg, jpeg or png and have the rig
 
 ### Adding fields
 Add one line for each field to the "app/controllers/catalog_controller.rb":
-NOTE: Lines needed to be added after the "config.add_field_configuration_to_solr_request!"
+#### NOTE: Lines needed to be added after the "config.add_field_configuration_to_solr_request!"
 * config.add_index_field 'Solr_field_name', :label => 'Tag_name_in_spotlight'
 
 ### Adding facets
 Add one line for each facet to the "app/controllers/catalog_controller.rb":
 * config.add_facet_field 'Solr_field_name', :label => 'Facet_name_in_spotlight'
-NOTE: Lines must followed by "config.add_facet_fields_to_solr_request!"
+#### NOTE: Lines must followed by "config.add_facet_fields_to_solr_request!"
 
 
 
