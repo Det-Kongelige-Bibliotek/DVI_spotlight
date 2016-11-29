@@ -53,7 +53,7 @@ Your local application should be up and running. Check it by creating a new exhi
 
 BE AWARE that the images you upload need to be jpg, jpeg or png and have the right extension at the file name!
 
-#### Adding fields and facets to spotlight (connecting spotlight metadata fields with solr fields)
+## Adding fields and facets to spotlight (connecting spotlight metadata fields with solr fields)
 
 ### Adding fields
 Add one line for each field to the "app/controllers/catalog_controller.rb":
