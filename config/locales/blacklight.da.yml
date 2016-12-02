@@ -1,92 +1,92 @@
 da:
   views:
     pagination:
-      first: '&laquo; First'
-      last: 'Last &raquo;'
-      previous: '&laquo; Previous'
-      next: 'Next &raquo;'
+      first: '&laquo; Første'
+      last: 'Sidste &raquo;'
+      previous: '&laquo; Forrige'
+      next: 'Næste &raquo;'
       truncate: '…'
 
     pagination_compact:
-      previous: '&laquo; Previous'
-      next: 'Next &raquo;'
+      previous: '&laquo; Forrige'
+      next: 'Næste &raquo;'
 
   blacklight:
     application_name: 'Blacklight'
 
     header_links:
       login: 'Login'
-      logout: 'Log Out'
+      logout: 'Log ud'
       bookmarks: 'Bogmærker'
-      saved_searches: 'Saved Searches'
-      search_history: 'History'
+      saved_searches: 'Gemte søgninger'
+      search_history: 'Historik'
 
-    welcome: 'Welcome!'
-    and: 'and'
-    or: 'or'
+    welcome: 'Velkommen!'
+    and: 'og'
+    or: 'eller'
 
     bookmarks:
-      title: 'Bookmarks'
-      page_title: 'Bookmarks - %{application_name}'
-      no_bookmarks: 'You have no bookmarks'
+      title: 'Bogmærker'
+      page_title: 'Bogmærker - %{application_name}'
+      no_bookmarks: 'Du har ingen bogmærker'
       add:
-        button: 'Bookmark'
+        button: 'Set bogmærke'
         success:
-          one: 'Successfully added bookmark.'
-          other: 'Successfully added bookmarks.'
-        failure:  'Sorry, there was a problem saving the bookmarks.'
+          one: 'Bogmærket er tilføjet.'
+          other: 'Bogmærker er blevet tilføjet.'
+        failure:  'Beklager, bogmærkerne kunne ikke gemmes.'
       remove:
-        button: 'Remove bookmark'
-        success: 'Successfully removed bookmark.'
-        failure: 'Sorry, there was a problem removing the bookmarks.'
-        action_confirm: 'Remove this bookmark?'
+        button: 'Fjern bogmærke'
+        success: 'Bogmærket er blevet fjernet.'
+        failure: 'Beklager, bogmærkerne kunne ikke fjernes.'
+        action_confirm: 'Skal dette bogmærke fjernes?'
       clear:
-        action_title: 'Clear Bookmarks'
-        action_confirm: 'Clear your bookmarks?'
-        success: 'Cleared your bookmarks.'
-        failure: 'Sorry, there was a problem clearing your bookmarks.'
-      need_login: 'Please log in to manage and view your bookmarks.'
-      list_title: 'Your Bookmarks'
-      delete: 'Remove'
+        action_title: 'Slet bogmærker'
+        action_confirm: 'Skal dine bogmærker slettes?'
+        success: 'Dine bogmærker er blevet slettet.'
+        failure: 'Beklager, der var problemer med at fjerne dine bogmærker.'
+      need_login: 'Log ind for at se og administrere dine bogmærker.'
+      list_title: 'Dine bogmærker'
+      delete: 'Fjern'
 
     saved_searches:
       add:
-        success: 'Successfully saved your search.'
-        failure: 'There was a problem saving your search.'
+        success: 'Din søgning er blevet gemt.'
+        failure: 'Der var problemer med at gemme din søgning.'
       remove:
-        success: 'Successfully removed that saved search.'
-        failure: 'There was a problem removing your search.'
+        success: 'Den gemte søgning blev fjernet.'
+        failure: 'Der var problemer med at fjerne din gemte søgning.'
       clear:
-        action_title: 'Clear Saved Searches'
-        action_confirm: 'Clear your saved searches?'
-        success: 'Cleared your saved searches.'
-        failure: 'There was a problem clearing your searches.'
-      title: 'Saved Searches'
-      page_title: 'Saved Searches - %{application_name}'
-      need_login: 'Please log in to manage and view your saved searches.'
-      no_searches: 'You have no saved searches'
-      list_title: 'Your saved searches'
-      delete: 'delete'
+        action_title: 'Slet gemte søgninger'
+        action_confirm: 'Vil du slette dine gemte søgninger?'
+        success: 'Dine gemte søgninger er blevet slettet.'
+        failure: 'Der var problemer med at slette dine søgninger.'
+      title: 'Gemte søgninger'
+      page_title: 'Gemte søgninger - %{application_name}'
+      need_login: 'Log ind for at se og administrere dine gemte søgninger.'
+      no_searches: 'Du har ingen gemte søgninger'
+      list_title: 'Dine gemte søgninger'
+      delete: 'Slet'
 
     search_history:
       clear:
-        action_title: 'Clear Search History'
-        action_confirm: 'Clear your search history?'
-        success: 'Cleared your search history.'
-        failure: 'There was a problem clearing your search history.'
-      title: 'Search History'
-      page_title: 'Search History - %{application_name}'
-      no_history: 'You have no search history'
-      recent: 'Your recent searches'
-      forget: 'forget'
-      save: 'save'
+        action_title: 'Slet søgehistorik'
+        action_confirm: 'Vil du slette din  søgehistorik?'
+        success: 'Din søgehistorik blev slettet.'
+        failure: 'Der var problemer med at slette din søgehistorik.'
+      title: 'Søgehistorik'
+      page_title: 'Søgehistorik - %{application_name}'
+      no_history: 'Du har ingen søgehistorik'
+      recent: 'Dine seneste søgninger'
+      forget: 'glem'
+      save: 'gem'
 
     tools:
-      title: 'Tools'
-      citation: 'Cite'
-      email: 'Email'
-      sms: 'SMS This'
-      clear: 'Clear'
+      title: 'Værktøjer'
+      citation: 'Citat'
+      email: 'E-mail'
+      sms: 'SMS om dette'
+      clear: 'Slet'
 
     citation:
       mla: 'MLA'
@@ -95,137 +95,137 @@ da:
 
     email:
       form:
-        title: 'Email This'
-        to: 'Email:'
-        message: 'Message:'
+        title: 'E-mail om dette'
+        to: 'E-mail:'
+        message: 'Tekst:'
         submit: 'Send'
       text:
-        default_title: 'N/A'
-        title: 'Title: %{value}'
-        author: 'Author: %{value}'
+        default_title: '(ingen)'
+        title: 'Titel: %{value}'
+        author: 'Forfatter: %{value}'
         format: 'Format: %{value}'
-        language: 'Language: %{value}'
+        language: 'Sprog: %{value}'
         subject:
-          one: 'Item Record: %{title}'
-          other: 'Item records'
+          one: 'Indgang: %{title}'
+          other: 'Indgange'
         url: 'URL: %{url}'
-        message: 'Message: %{message}'
+        message: 'Tekt: %{message}'
 
-      success: "Email Sent"
+      success: "E-mail'en er blevet sendt"
 
       errors:
         to:
-          invalid: 'You must enter a valid email address'
-          blank: 'You must enter a recipient in order to send this message'
+          invalid: 'Du skal indtaste en korrekt e-mail-adresse'
+          blank: 'Du skal angive en modtager for at kunne sende denne meddelelse'
     sms:
       form:
-        title: 'SMS This'
-        to: 'Phone Number:'
-        carrier: 'Carrier'
-        carrier_prompt: 'Please select your carrier'
+        title: 'SMS om dette'
+        to: 'Telefonnummer:'
+        carrier: 'Tjenesteyder'
+        carrier_prompt: 'Vælg din tjenesteyder'
         submit: 'Send'
       text:
         title: '%{value}'
         author: ' by %{value}'
         url: 'Link: %{url}'
-      success: "SMS Sent"
+      success: "SMS'en er sendt"
       errors:
         to:
-          invalid: 'You must enter a valid 10 digit phone number'
-          blank: "You must enter a recipient's phone number in order to send this message"
+          invalid: 'Du skal indtaste et korrekt 10-cifret telefonnummer'
+          blank: "Du skal angive en modtagers telefonnummer for at kunne sende denne meddelelse"
         carrier:
-          blank: 'You must select a carrier'
-          invalid: "You must enter a valid carrier"
+          blank: 'Du skal vælge en tjenesteyder'
+          invalid: "Du skal indtaste en korrekt tjenesteyder"
 
-    back_to_search: 'Back to Search'
-    back_to_bookmarks: 'Back to Bookmarks'
+    back_to_search: 'Tilbage til søgning'
+    back_to_bookmarks: 'Tilbage til bogmærker'
 
     search:
       # i18n key 'title' is deprecated and will be removed in Blacklight 6.0
-      title: '%{application_name} Search Results'
-      page_title:
-        title: '%{constraints} - %{application_name} Search Results'
+      title: '%{application_name} Søgeresultater'
+      page_title: 
+        title: '%{constraints} - %{application_name} Søgeresultater'
         constraint: '%{label}: %{value}'
-        many_constraint_values: '%{values} selected'
-      search_results_header: 'Search Constraints'
-      search_results: 'Search Results'
+        many_constraint_values: '%{values} valgt'
+      search_results_header: 'Søgebegrænsninger'
+      search_results: 'Søgeresultater'
       errors:
-        request_error: "Sorry, I don't understand your search."
-        invalid_solr_id: "Sorry, you have requested a record that doesn't exist."
+        request_error: "Beklager, din søgning kan ikke forstås."
+        invalid_solr_id: "Beklager, du har bedt om en indgang som ikke eksisterer."
       per_page:
-        label: '%{count}<span class="sr-only"> per page</span>'
-        button_label: '%{count} per page'
-        title: 'Number of results to display per page'
-        submit: 'Update'
+        label: '%{count}<span class="sr-only"> pr. side</span>'
+        button_label: '%{count} pr. side'
+        title: 'Antal resultater som vises pr. side'
+        submit: 'Opdater'
       sort:
-        label: 'Sort by %{field}'
-        submit: 'sort results'
+        label: 'Sorter efter %{field}'
+        submit: 'Sorter resultater'
       form:
         search_field:
-          label: 'Search in'
-          title: 'Targeted search options'
+          label: 'Søg i'
+          title: 'Udvalgte søgemuligheder' # Targeted search options
           post_label: 'for'
         search:
-          label: 'search for'
-          placeholder: 'Search...'
-        submit: 'Search'
+          label: 'søg efter'
+          placeholder: 'Søg...'
+        submit: 'Søg'
       pagination:
-        title: 'Results navigation'
+        title: 'Resultater' # 'Results navigation'
       pagination_info:
-        no_items_found: 'No %{entry_name} found'
-        single_item_found: '<strong>1</strong> %{entry_name} found'
+        no_items_found: '%{entry_name} ikke fundet'
+        single_item_found: '<strong>1</strong> %{entry_name} fundet'
         pages:
-          one: '<strong>%{start_num}</strong> - <strong>%{end_num}</strong> of <strong>%{total_num}</strong>'
-          other: '<strong>%{start_num}</strong> - <strong>%{end_num}</strong> of <strong>%{total_num}</strong>'
+          one: '<strong>%{start_num}</strong> - <strong>%{end_num}</strong> af <strong>%{total_num}</strong>'
+          other: '<strong>%{start_num}</strong> - <strong>%{end_num}</strong> af <strong>%{total_num}</strong>'
       entry_pagination_info:
         one: '<strong>1 of 1</strong>'
-        other: '<strong>%{current}</strong> of <strong>%{total}</strong>'
+        other: '<strong>%{current}</strong> af <strong>%{total}</strong>'
       documents:
         counter: '%{counter}. '
       facets:
-        title: 'Limit your search'
-        clear: 'Clear Filter'
+        title: 'Afgræns søgning'
+        clear: 'Slet filter'
         sort:
-          count: 'Numerical Sort'
-          index: 'A-Z Sort'
+          count: 'Numerisk sortering'
+          index: 'Alfabetisk sortering'
         count: '%{number}'
-        more_html: 'more <span class="sr-only">%{field_name}</span> »'
+        more_html: 'flere <span class="sr-only">%{field_name}</span> »'
         selected:
-          remove: '[remove]'
-        missing: "[Missing]"
+          remove: '[fjern]'
+        missing: "[Mangler]"
       group:
-        more: 'more »'
+        more: 'mere »'
       filters:
-        title: 'You searched for:'
+        title: 'Du søgte efter:'
         label: '%{label}:'
         remove:
-          value: 'Remove constraint %{value}'
-          label_value: 'Remove constraint %{label}: %{value}'
-      start_over: 'Start Over'
+          value: 'Fjern begrænsing %{value}'
+          label_value: 'Fjern begrænsning %{label}: %{value}'
+      start_over: 'Begynd forfra' # 'Start Over'
       index:
         label: '%{label}:'
       show:
         title: '%{document_title} - %{application_name}'
         label: '%{label}:'
-      rss_feed: 'RSS for results'
-      atom_feed: 'Atom for results'
+      rss_feed: 'RSS for resultater'
+      atom_feed: 'Atom for resultater' # unknown meaning om "atom", needs translation
       fields:
-        default: 'Keyword'
+        default: 'Nøgleord'
       bookmarks:
-        present: "In Bookmarks"
-        absent: "Bookmark"
-        inprogress: "Saving..."
+        present: "I bogmærker"
+        absent: "Bogmærke"
+        inprogress: "Der gemmes..."
       zero_results:
-        title: "No results found for your search"
-        modify_search: "Try modifying your search"
-        use_fewer_keywords: "Use fewer keywords to start, then refine your search using the links on the left."
-        search_fields: "you searched by %{search_fields}"
-        search_everything: "try searching everything"
-      view_title: "View results as: "
+        title: "Din søgning gav ingen resultater"
+        modify_search: "Forsøg at ændre din søgning"
+        use_fewer_keywords: "Start med at anvende færre nøgleord. Senere kan du afgrænse søgningen ved at anvende linkene til venstre."
+        search_fields: "du søgte efter %{search_fields}"
+        search_everything: "forsøg at søge uden afgrænsning"
+      view_title: "Se resultater som: "
       view:
-        list: "List"
+        list: "Liste"
 
     entry_name:
-      default: 'entry'
+      default: 'indgang'
 
-    did_you_mean: 'Did you mean to type: %{options}?'
+    did_you_mean: 'Var det din mening at indtaste: %{options}?'
