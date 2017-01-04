@@ -70,3 +70,4 @@ gem 'devise_invitable'
 group :development do
   gem 'xray-rails'
 end
+gem 'openseadragon', '>= 0.3.2'
