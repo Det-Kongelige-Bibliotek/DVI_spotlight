@@ -3,8 +3,8 @@
           id:"kbOSDInstance",
           showNavigator:true,
           rtl:false,
-          initialPage:"1",
-          defaultZoomLevel:"0",
+          initialPage:1,
+          defaultZoomLevel:0,
           sequenceMode:true,
           indexPage:[],
           tileSources:image
@@ -19,16 +19,17 @@
   </div>
 
 <script type="text/javascript">
-  alert("BLAH");
-
-//  var kbOSDconfig = [<%= escape_javascript my_osd_config.to_s %>];
   var kbOSDconfig = [<%= raw  my_osd_config.to_json %>];
 
-  $.each(kbOSDconfig[0].indexPage, function (index, indexPage) {
-    if ('string' === typeof indexPage.page) {
-      index.page = parseInt(index.page, 10);
-    }
-  });
+  if (kbOSDconfig[0].indexPage.length < 2) { // if there is only one element in the index, then don't show any index
+    delete kbOSDconfig[0].indexPage;
+  } else {
+    $.each(kbOSDconfig[0].indexPage, function (index, indexPage) {
+      if ('string' === typeof indexPage.page) {
+        index.page = parseInt(index.page, 10);
+      }
+    });
+  }
 
 </script>
 <script src="https://static.kb.dk/kbOpenSeadragon/js/KbOSD_bundle.js"></script>
