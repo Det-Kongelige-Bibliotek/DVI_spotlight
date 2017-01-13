@@ -40,16 +40,28 @@
 
   </script>
 
-  <div style="border:1px solid black;position:absolute;top:50px;left:20px;right:20px;bottom:20px">
-    <div id="myInstance" style="height:100%">
-      <div class="kbOSDViewer">
-        <div class="kbOSDContent"></div>
-        <div class="kbOSDFooter"></div>
+
+  <% unless image.nil? %>
+      <div class="openseadragon-container <%= osd_container_class %>">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="myInstance">
+              <div class="kbOSDViewer" style="height:550px;">
+                <div class="kbOSDToolbar"></div>
+                <div class="kbOSDContent"></div>
+              </div>
+            </div>
       </div>
-    </div>
-  </div>
+        </div>
+      </div>
+
+  <% end %>
 
 
-<script src="https://static.kb.dk/kbOpenSeadragon/js/KbOSD_bundle.js"></script>
+
+
+
+
+<script src="http://192.168.109.128:8002/js/KbOSD.js"></script>
 <%# OpenSeadragon end %>
 </div>
