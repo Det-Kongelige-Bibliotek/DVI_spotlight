@@ -16,10 +16,12 @@
 //
 
 
-$brand-primary: #d11f5d;
+//$brand-primary: #d11f5d;
+$brand-primary: #5c221e;
+
 $gray:#ededbb;
 $gray-lighter:lighten($gray,10%);
-$brown:#bd8a75;
+$brown:#ae918f;
 
 $navbar-transparent-color: $brand-primary !default;
 $navbar-transparent-bg: rgba(237, 237, 187, 0.25) !default;
