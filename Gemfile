@@ -70,6 +70,3 @@ gem 'devise_invitable'
 #Used in openseadragon
 gem 'font-awesome-rails'
 
-group :development do
-  gem 'xray-rails'
-end
