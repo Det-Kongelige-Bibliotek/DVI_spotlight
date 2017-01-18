@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .card-title, .card-back .subtit
 }
 
 #header-navbar{
-  box-shadow: 0 10px 6px -6px #ccc;
   padding-top:10px;
   padding-bottom: 10px;
   .navbar-brand {
@@ -74,8 +73,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .card-title, .card-back .subtit
 #sort-dropdown .dropdown-toggle, #per_page-dropdown .dropdown-toggle{
   color: #1e585c;
 }
-.glyphicon, .fa {
-  color: #1e585c;
+.glyphicon, .fa, .glyphicon :hover, .fa :hover {
+  color: $brown !important;
+  &:hover{
+    color: darken($brown , 20%) !important;
+  }
 }
 .pageFooter{
   box-shadow: 0 -10px 6px -6px #ccc;
@@ -86,4 +88,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .card-title, .card-back .subtit
     width:17px;
     vertical-align: top;
   }
+}
+.kbOSDViewer{
+  margin-top: 20px;
+  canvas{
+    //border-color: #ddd !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  }
+}
+.kbOSDToolbar.fullpage{
+  padding-top: 20px;
+  padding-right: 50px;
 }
