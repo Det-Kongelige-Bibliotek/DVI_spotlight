@@ -47,7 +47,7 @@ class CatalogController < ApplicationController
     config.add_index_field 'local_id_ssi', :label => 'Id'
     config.add_index_field 'shelf_mark_tdsim', :label => 'Opstilling'
 
-    config.add_facet_field 'subject_tdsim', :label => 'Emne', :single => true, :limit => 10 , sort: 'count'
+    config.add_facet_field 'subject_topic_facet_ssim', :label => 'Emne', :single => true, :limit => 10 , sort: 'count'
     config.add_facet_field 'readable_dat_string_tsim', :label => 'Oprindelsesdato', :single => true, :limit => 10
 
     config.add_facet_fields_to_solr_request!
