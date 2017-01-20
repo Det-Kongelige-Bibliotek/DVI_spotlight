@@ -74,3 +74,8 @@ gem 'kbcookie', '>=0.0.0', :git => 'https://github.com/Det-Kongelige-Bibliotek/k
 #Used in openseadragon
 gem 'font-awesome-rails'
 
+
+group :development do
+  gem 'xray-rails'
+end
+gem 'openseadragon', '>= 0.3.2'
