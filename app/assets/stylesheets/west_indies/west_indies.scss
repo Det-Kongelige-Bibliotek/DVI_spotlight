@@ -122,6 +122,7 @@ body{
 
 .document-thumbnail img {
   max-height: 120px;
+  margin-bottom:10px;
 }
 
 //style the search screen to have the thumbnail and metadata alin and make it responsive
@@ -137,7 +138,8 @@ body{
   }
 
   #documents.documents-list .document {
-    min-height: 150px;
+    min-height: 170px;
+
   }
 
 
