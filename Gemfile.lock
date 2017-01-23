@@ -40,6 +40,12 @@ GIT
       tophat
       underscore-rails (~> 1.6)
 
+GIT
+  remote: https://github.com/Det-Kongelige-Bibliotek/kbcookie.git
+  revision: aa797344e75246c609313ccad28ea7f0a40430ad
+  specs:
+    kbcookie (0.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -162,9 +168,12 @@ GEM
     faraday_middleware (0.10.0)
       faraday (>= 0.7.4, < 0.10)
     ffi (1.9.14)
+    font-awesome-rails (4.7.0.1)
+      railties (>= 3.2, < 5.1)
     github-markup (1.4.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    high_voltage (3.0.0)
     i18n (0.7.0)
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -361,9 +370,12 @@ DEPENDENCIES
   devise
   devise-guests (~> 0.5)
   devise_invitable
+  font-awesome-rails
   friendly_id!
+  high_voltage (~> 3.0.0)
   jbuilder (~> 2.5)
   jquery-rails
+  kbcookie (>= 0.0.0)!
   listen (~> 3.0.5)
   openseadragon (>= 0.3.2)
   puma (~> 3.0)
