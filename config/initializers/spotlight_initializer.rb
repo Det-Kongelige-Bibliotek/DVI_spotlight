@@ -20,7 +20,7 @@
 # Spotlight::Engine.config.default_contact_email = nil
 
 # ==> Solr configuration
-# Spotlight::Engine.config.writable_index = true
+Spotlight::Engine.config.writable_index = true
 # Spotlight::Engine.config.solr_batch_size = 20
 # Spotlight::Engine.config.filter_resources_by_exhibit = true
 # Spotlight::Engine.config.autocomplete_search_field = 'autocomplete'
