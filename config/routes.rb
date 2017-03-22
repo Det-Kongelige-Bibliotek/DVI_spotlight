@@ -1,6 +1,7 @@
 
 Rails.application.routes.draw do
-  scope "(:locale)", :locale => /en|da/ do
+#  scope "(:locale)", :locale => /en|da/ do
+scope "(/:locale)", :locale => /en|da/ do
 
   mount Blacklight::Oembed::Engine, at: 'oembed'
   mount Riiif::Engine => '/images', as: 'riiif'
@@ -27,7 +28,7 @@ Rails.application.routes.draw do
     collection do
       delete 'clear'
     end
-  end
+end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
