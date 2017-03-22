@@ -15,7 +15,7 @@ da:
     application_name: 'Blacklight'
 
     header_links:
-      login: 'Login'
+      login: 'Log ind'
       logout: 'Log ud'
       bookmarks: 'Bogmærker'
       saved_searches: 'Gemte søgninger'
