@@ -79,3 +79,6 @@ group :development do
   gem 'xray-rails'
 end
 gem 'openseadragon', '>= 0.3.2'
+
+gem 'devise-i18n'
+gem 'rails-i18n', '~> 5.0.0'
