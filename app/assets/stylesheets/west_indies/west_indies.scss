@@ -1,112 +1,12 @@
-//
-//$base_color:#b83b67;
-//$base_color_darker:darken($base_color,10%);
-//$base_color2:#858682;
-$font-family-nav:         'Roboto Condensed', Helvetica, Arial, sans-serif;
-$text_header_color_nav:#fff;
-//$brand-primary: #d11f5d;
-$brand-primary: #5c221e;
-$brown:#ae918f;
-  //$text_header_color:$base_color2;
-//
-//
-body {
-    margin-bottom: 0;
-}
-.gradient_base_backcolor{
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#348899+0,283b3b+100 */
-  background: #348899; /* Old browsers */
-  background: -moz-linear-gradient(top,  #348899 0%, #283b3b 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #348899 0%,#283b3b 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #348899 0%,#283b3b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#348899', endColorstr='#283b3b',GradientType=0 ); /* IE6-9 */
-}
-//
-.navbar-inverse {
-  //@extend .gradient_base_backcolor;
-  background-color: #ffffff;
-  border: none;
-  a {
-    //color: #fff !important;
-    color: #000 !important;
 
+@import "header";
 
-    &:hover, &:focus, &:active {
-      //color: #ccc !important;
-      //background-color: $brand-primary !important;
-      color: $brown !important;
-    }
+@import "general";
 
-  }
-  ul.dropdown-menu{
-  a {
-    color: #000 !important;
+@import "footer";
 
-    &:hover {
-      color: #ddd !important;
-    }
+@import "landing-page";
 
-  }
-}
-
-}
-//
-//.image-masthead .navbar {
-//  border: 0;
-//  border-radius: 0;
-//  background-color: rgba(148, 59, 103, 0.05) !important;
-//}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .card-title, .card-back .subtitle, .h6 {
-  //color: #348899;
-  color: #5c221e;
-
-}
-
-#header-navbar{
-  padding-top:10px;
-  padding-bottom: 10px;
-  .navbar-brand {
-    width: 505px;
-  }
-}
-#sort-dropdown .dropdown-toggle, #per_page-dropdown .dropdown-toggle{
-  color: #1e585c;
-}
-.glyphicon, .fa, .glyphicon :hover, .fa :hover {
-  color: $brown !important;
-  &:hover{
-    color: darken($brown , 20%) !important;
-  }
-}
-.pageFooter{
-  box-shadow: 0 -10px 6px -6px #ccc;
-  font-family: $font-family-nav;
-  padding: 20px 0 10px 0;
-  margin-top: 20px;
-  img{
-    width:17px;
-    vertical-align: top;
-  }
-}
-.kbOSDViewer{
-  margin-top: 20px;
-  canvas{
-    //border-color: #ddd !important;
-    border: 1px solid #ddd !important;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  }
-}
-.kbOSDToolbar.fullpage{
-  padding-top: 20px;
-  padding-right: 50px;
-}
-button{
-  .glyphicon{
-    color:#fff !important;
-  }
-}
 body{
   min-height: 100%;
 

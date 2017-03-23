@@ -1,0 +1,58 @@
+
+.socialButtons {
+    position: relative;
+    top: 10px;
+    left: 2px;
+    z-index: 9999;
+    width: 120px;
+}
+
+.fa-facebook, .fa-twitter {
+    padding-right: 7px;
+}
+
+.fa {
+&:hover {
+     color: $link-hover-color !important;
+ }
+color: $link-color !important;
+}
+
+// kbOSD
+   #kbOSDInstance {
+       height: 680px;
+       top: -20px;
+.kbOSDViewer .icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+.kbOSDContent {
+    border-color: $nav-tabs-border-color !important;
+    border-style: solid;
+    border-width: 1px;
+}
+
+@media only screen and (max-width: 1026px) {
+    .hideWhenSmall {
+        display: none !important;
+    }
+}
+}
+.kbOSDToolbar {
+ul, ol {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+}
+
+/* Hide rotation and print icon  on phone Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .rotateRight, .rotateLeft, .fa-print{
+        display:none !important;
+    }
+}
