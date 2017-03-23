@@ -15,7 +15,7 @@ da:
     application_name: 'Blacklight'
 
     header_links:
-      login: 'Login'
+      login: 'Log ind'
       logout: 'Log ud'
       bookmarks: 'Bogmærker'
       saved_searches: 'Gemte søgninger'
@@ -71,15 +71,15 @@ da:
     search_history:
       clear:
         action_title: 'Slet søgehistorik'
-        action_confirm: 'Vil du slette din  søgehistorik?'
+        action_confirm: 'Vil du slette din søgehistorik?'
         success: 'Din søgehistorik blev slettet.'
         failure: 'Der var problemer med at slette din søgehistorik.'
       title: 'Søgehistorik'
       page_title: 'Søgehistorik - %{application_name}'
       no_history: 'Du har ingen søgehistorik'
       recent: 'Dine seneste søgninger'
-      forget: 'glem'
-      save: 'gem'
+      forget: 'Glem'
+      save: 'Gem'
 
     tools:
       title: 'Værktøjer'
@@ -109,7 +109,7 @@ da:
           one: 'Indgang: %{title}'
           other: 'Indgange'
         url: 'URL: %{url}'
-        message: 'Tekt: %{message}'
+        message: 'Tekst: %{message}'
 
       success: "E-mail'en er blevet sendt"
 
@@ -120,7 +120,7 @@ da:
     sms:
       form:
         title: 'SMS om dette'
-        to: 'Telefonnummer:'
+        to: 'Telefonnr.:'
         carrier: 'Tjenesteyder'
         carrier_prompt: 'Vælg din tjenesteyder'
         submit: 'Send'
