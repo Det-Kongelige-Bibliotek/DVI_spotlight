@@ -1,0 +1,669 @@
+da:
+  cancel: "Fortryd"
+  drag: "Træk"
+  toggle_nav: "Vis/skjul browseknapper" # "Toggle navigation"; cannot be translated 1:1 into Danish
+  helpers:
+    action:
+      new: Tilføj ny %{model}
+      view: Vis
+      edit: Rediger
+      edit_long: "Rediger %{model}"
+      destroy: Slet
+      cancel: Fortryd
+      destroy_are_you_sure: "Vil du slette %{model}?"
+      update_all: "Gem ændringer"
+      spotlight/search:
+        destroy: "Slet"
+        edit_long: "Rediger denne gemte søgning"
+      acts_as_taggable_on/tag:
+        destroy: "Slet tag" # "Delete tag"; what does "tag" mean in the context, should "tag" be translated?
+      spotlight/role:
+        create: "Tilføj ny bruger"
+        destroy: "Fjern fra sitet"
+      spotlight/custom_field:
+        create: "Tilføj nyt felt"
+      spotlight/contact:
+        create: "Tilføj kontaktperson"
+      spotlight/exhibit:
+        create: "Opret udstilling"
+        destroy: "Slet denne udstilling"
+    submit:
+      spotlight_default: &spotlight_default
+        create: "Gem"
+        submit: "Gem ændringer"
+        update: "Gem ændringer"
+        created: "%{model} blev oprettet."
+        updated: "%{model} blev opdateret."
+        batch_updated: "%{model} blev opdateret."
+        batch_error: "Der var problemer med at opdatere %{model}."
+        destroyed: "%{model} blev slettet."
+      contact:
+        create: "Gem"
+        created: "%{model} blev oprettet."
+        destroyed: "%{model} blev fjernet." # "The %{model} was destroyed"; does "destroyed" mean "removed" as Danish "fjernet"?
+        update: "Gem"
+        updated: "%{model} blev opdateret."
+        batch_updated: "Kontaktpersonerne blev opdateret."
+      page: &spotlight_page
+        create: "Tilføj ny side"
+        submit: "Gem ændringer"
+        update: "Gem ændringer"
+        created: "%{model} blev oprettet."
+        updated: "%{model} blev opdateret."
+        batch_updated: "%{model} blev opdateret."
+        batch_error: "Der var problemer med at opdatere de valgte sider."
+        destroyed: "%{model} blev slettet."
+      exhibit: *spotlight_default
+      filter: *spotlight_default
+      search: *spotlight_default
+      site: *spotlight_default
+      contact_form:
+        create: "Send"
+        created: "Tak. Dit feedback er blevet sendt."
+      feature_page: *spotlight_page
+      about_page: *spotlight_page
+      home_page: *spotlight_page
+      blacklight_configuration:
+        create: "Gem"
+        submit: "Gem ændringer"
+        update: "Gem ændringer"
+        updated: "Udstillingen blev opdateret."
+      solr_document: *spotlight_default
+      users: *spotlight_default
+      custom_field: *spotlight_default
+      role:
+        updated: "Brugeren er blevet opdateret."
+        destroyed: "Brugeren er blevet fjernet."
+        batch_error:
+          one: "Der var problemer med at gemme brugeren."
+          other: "Der var problemer med at gemme brugerne."
+      invite:
+        invited: 'Brugeren er blevet inviteret.'
+    label:
+      solr_document:
+        exhibit_tag_list: "Tags"
+      spotlight/exhibit:
+        tag_list: 'Tags'
+      spotlight/filter:
+        field: 'Felt'
+        value: 'Værdi'
+  activerecord:
+    models:
+      spotlight:
+        page: Side
+    attributes:
+      "spotlight/contact":
+          avatar: "Foto"
+      "spotlight/exhibit":
+          published: "Offentliggjort?"
+      "spotlight/page":
+        display_sidebar?: "Vis sidebjælke" # "Show sidebar"
+        display_title: "Vis titel"
+      "spotlight/masthead":
+        display: "Vis baggrundsbillede i masthead" # "Show background image in masthead"; should "masthead" be translated?
+    help:
+      spotlight/exhibit:
+        tag_list: "Indtast tags adskilt af kommaer."
+  blacklight:
+    search:
+      fields:
+        facet:
+          exhibit_tag: Udstillingens tags # Exhibit Tags
+  spotlight:
+    application_name: "%{exhibit} - %{application_name}"
+    html_title: "%{title} | %{application_name}"
+    html_admin_title: "%{section} - %{title}"
+    configuration:
+      sidebar:
+        header: Indstillinger
+        settings: Generelle
+        appearance: Udseende
+        users: Brugere
+        metadata: Metadata
+        search_configuration: Søgning
+      header: "Indstillinger"
+      page_title: "Sidetitel"
+      settings:
+        header: "Indstillinger"
+    admin_users:
+      create:
+        success: Brugeren blev tilføjet som udstillingsadministrator
+        error: Der var problemer med at tilføjet brugeren som udstillingsadministrator
+      destroy:
+        success: Site-administrationsrettigheder blev fjernet fra brugeren
+        error: Der var problemer med at fjerne site-administrationsrettigheder fra brugeren
+      index:
+        section: Administrer udstillinger
+        page_title: Administrer administratorer
+        instructions: Nuværende udstillingsadministratorer
+        all_users: Administratorer og forvaltere af alle udstillinger
+        copy: Kopier
+        add: Tilføj ny administrator
+        destroy: Fjern fra rollen
+        save: Tilføj rolle
+        pending: ventende
+    appearances:
+      edit:
+        header: Udseende
+        exhibit_style:
+          heading: "Styling af udstilling"
+        main_navigation:
+          menu: Hovedmenu
+          help: >
+            Vælg de menupunkter som du ønsker skal vises i hovedmenuen
+            (et menupunkt vises kun når der findes offentliggjorte sider for dette menupunkt).
+            Klik på et menupunkt for at ændre menuteksten. Træk-og-slip et menupunkt for at ændre
+            rækkefølgen i menuen.
+        restore_default: "Nulstil til standard"
+        site_masthead:
+          heading: Site masthead # same in English, or should it be translated?
+          help: >
+            Du kan vælge og tilskære et billede for at anvende det som baggrund i din udstillings
+            masthead. For at anvende et billede som masthead-baggrund skal du bruge et billeder som
+            er mindst 120 pixel højt og 1200 pixel bredt. Det bedste resultat fås med et billede
+            som er mindst 1800 pixel i bredden. Du kan tilskære større billeder ved at anvende 
+            tilskæringsværktøjet nedenfor.
+        site_thumbnail:
+          heading: Miniaturebillede til site
+          help: "Du kan vælge og tilskære et billede til visuel identifikation af denne udstilling."
+        thumbnail:
+          small: Lille
+          medium: Mellem
+          large: Stor
+    contact_forms:
+      new:
+        header: "Feedback"
+    curation:
+      sidebar:
+        header: Forvaltning
+        dashboard: Kontrolpanel
+        analytics: Analytics # unknown meaning, probably needs translation
+        items: Elementer # better translation?
+        tags: Tags
+        browse: Bladring # or Browse?
+        feature_pages: Feature-sider Pages # Feature pages; is there a good translation?
+        about_pages: Om-sider # About pages; will Danes prefere "Om-sider" or "About-sider"?
+      nav:
+        home: "Start"  # "Home"
+      header: "Forvaltning" # "Curation"
+    search_configurations:
+      document_index_view_types:
+        label: Typer af resultatsider # Result page types
+      default_per_page:
+        label: Standard pr. side # Default per page; there is no 1:1 translation of "Default" into Danish
+      edit:
+        header: "Søg"
+        tab:
+          options: "Valgmuligheder" # "Options"
+          facets: "Facetter" # "Facets"; do Danes understand "Facetter" for searching?
+          results: "Resultater"
+      search_fields:
+        header: "Feltbaseret søgning"
+        help: >
+          Hvis søgeboksen vises, kan du også aktivere feltbaseret søgning.
+          Ved feltbaseret søgning tilføjes en dropdown-menu til søgeboksen i din udstilling
+          således at brugerne får mulighed for at afgrænse søgningen til et enkelt metadatafelt.
+        instructions: >
+          Hvis aktiveret, kan du nedenfor vælge de metadatafelter der er tilgængelige ved søgning.
+          Klik på et feltnavn for at redigere det viste navn. Træk-og-slip linjer for at ændre rækkefølgen
+          som de vises i søgeboksens dropdown-menu.
+        enable_feature: Vis søgeboks
+      facets:
+        help: >
+          Hvis sidebjælken er synlig, kan brugerne anvende facetterne i sidebjælken til at afgrænse
+          søgninger. Nedenfor kan du vælge de facetter der skal være tilgængelige for søgning.
+          Klik på en facets feltnavn for at ændre navnet. Træk-og-slip for at ændre rækkefølgen
+          i sidebjælken.
+        sort_by:
+          label: "Sorter efter:"
+          count: Frekvens
+          index: Værdi
+      facet_metadata:
+        document_count:
+          one: "%{count} element" # Item
+          other:  "%{count} elementer"
+        too_many_values_count: "%{count}+ unikke værdier"
+        value_count:
+          one: "%{count}  unik værdi"
+          other: "%{count}  unikke værdier"
+      sort:
+        header: "Sorter felter"
+        help: >
+          Vælg felter, som du ønsker skal være tilgængelige for brugerne til at
+          sortere resultater. Klik på et feltnavn for at ændre navnet. Træk-og-slip
+          felter for at ændre rækkefølgen dropdown-menuen til sortering.
+          Det første felt er standardfeltet for sortering.
+        keys:
+          asc: stigende
+          desc: faldende
+          score: relevanspoint # relevancy score; good translation but younger Danes might prefere "score"
+          sort_date_dtsi: dato
+          sort_title_ssi: titel
+          sort_type_ssi: type
+          sort_source_ssi: kilde
+          id: id
+    metadata_configurations:
+      edit:
+        field:
+          label: "Feltnavn"
+        deselect_all: "Fravælg alle"
+        select_all: "Vælg alle"
+        header: "Metadata"
+        order_header: "Vis og sorter felter med metadata"
+        exhibit_specific:
+          header: "Udstillingsspecifikke felter"
+          instructions:
+            "Du kan tilføje metadatafelter som supplement til metadatafelterne i databasens elementer."
+        view:
+          show: "Detaljer for elementer"
+        instructions: >
+          Vælg hvilke metadatafelter der skal vises på hver sidetype. Klik på et feltnavn
+          for at ændre navnet. Træk-og-slip linjer for at ændre rækkefølgen for visning.
+    catalog:
+      breadcrumb:
+        index: 'Søgeresultater'
+      edit_default:
+        blank_field_warning_html: >
+          Dette felt er p.t. skjult på alle sider. Du kan gøre det synligt på siden Forvaltning &gt; %{link}
+        full_title_tesim: "Titel"
+        url-field:
+          help: "Gyldige filtyper: %{extensions}"
+      facets:
+        exhibit_visibility:
+          label: "Synlighed for element"
+          private: "Privat"
+      fields:
+        title: "Titel"
+        date_added: "Dato tilføjet"
+        visibility: Offentlig
+      document_visibility_control:
+        make_public:
+          label: ""
+          button: Offentliggør
+        make_private:
+          label: ""
+          button: Gør privat
+        inprogress:
+          label: ""
+        private: "Privat"
+      admin:
+        title: Forvaltning - Elementer
+        header: Elementer
+      admin_header:
+        reindex: "Reindekser elementer"
+        new_resource: "Tilføj elementer"
+      new:
+        header: Importer elementer
+      reindex_progress_panel:
+        heading: Status for reindeksering
+        begin_html: "Reindeksering af i alt <span data-behavior='total'></span> elementer er startet."
+        completed_html: "<span data-behavior='completed'></span> ud af <span data-behavior='total'></span> elementer blev reindekseret."
+        error: 'En fejl opstod under reindeksering. Kontakt din udstillings administrator for at få mere information.'
+    invitation_mailer:
+      invitation_instructions:
+        subject: 'Invitation til at administrere \"%{exhibit_name}\"'
+        hello: "Hej"
+        someone_invited_you: "Udstillingsadministratoren har inviteret dig til at hjælpe med udstillingen \"%{exhibit_name}\"."
+        accept_invitation: "Du kan acceptere denne invitation ved at klikke på nedenstående link."
+        accept_link: "Accepter invitationen"
+        ignore: "Du kan blot ignorere denne e-mail, hvis du ikke vil acceptere invitationen. Din konto bliver ikke oprettet, før du aktiverer ovenstående link."
+        visit: 'Se udstillingen'
+    exhibits_admin_invitation_mailer:
+      invitation_instructions:
+        subject: 'Invitation til at administrere \"%{exhibit_name}\"'
+        hello: "Hej"
+        someone_invited_you: "En udstillingsadministrator har inviteret dig til at hjælpe med at administrere udstillinger."
+        accept_invitation: "Du kan acceptere denne invitation ved at klikke på nedenstående link."
+        accept: "Accepter invitationen"
+        ignore: "Du kan blot ignorere denne e-mail, hvis du ikke vil acceptere invitationen. Din administratorkonto bliver ikke oprettet, før du aktiverer ovenstående link."
+    confirmation_mailer:
+      confirmation_instructions:
+        welcome: "Velkommen %{email}!"
+        instructions: "Du kan bekræfte din e-mail til kontoen vha. nedenstående link:"
+        confirm: Bekræft min konto
+    contact_form:
+      new:
+        header: "Feedback"
+    custom_fields:
+      edit:
+        header: Rediger udstillingspecifikt felt
+      new:
+        header: Tilføj udstillingspecifikt felt
+      form:
+        field_type:
+          label: "Type"
+          vocab: "Kontrolleret ordforråd"
+          text: "Fri tekst"
+    dashboards:
+      show:
+        header: Kontrolpanel
+      page_activity:
+        header: Seneste site-oprettelsesaktivitet # Recent Site Building Activity
+        new_feature_page: "Tilføj ny feature-side"
+        new_about_page: "Tilføj ny Om-side" # Add new About page
+        field:
+          title: Titel
+          last_edited_by: Bruger
+          updated_at: Seneste redigering
+      solr_document_activity:
+        header: Senest opdaterede elementer
+        no_documents: Der er ingen dokumenter i denne udstilling
+      analytics:
+        header: "Statistik"
+        monthly_header: "Brugeraktivitet i den seneste måned"
+        pageviews: "sidevisninger"
+        users: "unikke besøg"
+        sessions: "besøgende"
+        pagetitle: "sidetitel"
+        pages:
+          header: "Mest populære sider"
+    exhibits:
+      breadcrumb: Start
+      index:
+        published: Offentliggjorte udstillinger
+        user: Dine udstillinger
+        unpublished: Ikkeoffentliggjorte udstillinger
+      delete:
+        heading: Slet udstilling
+        warning_html: >
+          Denne handling kan ikke fortrydes. Sørg for at sikkerhedskopiere udstillingens indstillinger
+          og indhold vha. '%{export_link}' eksportfunktionen før du fortsætter.
+      edit:
+        header: Generelt
+        basic_settings:
+          heading: Grundindstillinger
+      form:
+        fields:
+          contact_emails:
+            help_block: Der sendes feedback-meddelelser til hver kontaktpersons e-mailadresse
+          published:
+            label: "Offentliggjort"
+            help_block: ""
+      new_exhibit_form:
+        fields:
+          title:
+            label: Titel
+            help_block: Dette kan ændres senere.
+          slug:
+            label: URL slug
+            help_block: Et navn uden mellemrum, men evt. med bindestreger som vises i udstillingens URL (fx "kort-over-afrika").
+      exhibit_card_front:
+        unpublished: Ikke offentliggjort
+      exhibit_card_back:
+        visit_exhibit: "Se udstilling"
+      new:
+        header: Opret ny udstilling
+      filter:
+        heading: Filtrer elementer
+      import:
+        heading: Importer data
+        instructions: Du kan importere en tidligere eksporteret JSON-fil fra denne webapplikation og bruge den til at definere denne udstilling.
+        button: Import data
+      export:
+        heading: Eksporter data
+        instructions: >
+          Du kan sikkerhedskopiere denne udstilling ved at eksportere dataene til en JSON-fil.
+          Derefter kan du importere denne JSON-fil ind i en ny udstilling for at genskabe disse data eller
+          bruge dem som udgangspunkt for en ny udstilling.
+        download: Eksporter data
+      confirmation_status:
+        confirmed: Bekræftet.
+        confirmation_sent: Bekræftelse er sendt.
+        not_validated: Ikke valideret.
+        resend: Send bekræftelse igen?
+      tags:
+        all: Alle
+    main_navigation:
+      about: "Om"
+      browse: "Browse"
+      curated_features: "Forvaltede features" # "Curated Features"
+    pages:
+      order_pages:
+        pages_header: Andre sider # Custom Pages; correct? no 1:1 translation of "custom" for Danish
+        instructions: Tilføj nye sider nedenfor. Træk-og-slip sider for at ændre rækkefølgen sidebjælken.
+        new_page: "Tilføj ny side"
+        save: "Gem"
+        cancel: "Fortryd"
+      index:
+        home_pages:
+          title: Startside for udstilling # Exhibit Home
+          header: Startside for udstilling
+        feature_pages:
+          title: Feature-sider # Feature Pages
+          header: Feature-sider
+          home_pages_header: Startside # Homepage
+        about_pages:
+          title: Om-sider # will Danes like "Om-sider" or prefer "About-sider"?
+          header: Om-sider
+      new:
+        header: Ny side
+      edit:
+        header: Redigering af side # Edit page; or "Redigeringside", two possible translations with different meaning
+        locked: "Denne side redigeres for øjeblikket af %{user} (%{created_at})"
+      form:
+        title_placeholder: "Titel"
+        page_content: "Indhold"
+        page_options: "Valgmuligheder" # "Options"; would "Indstillinger" be better?
+        page_thumbnail: "Miniaturebillede" # would untranslated "Thumbnail" be better?
+        thumbnail: # should "widget" be translated?
+          help: >
+            Du kan vælge og beskære et billede som skal repræsentere denne side visuelt.
+            Det vil blive anvendt hvis du inkluderer denne side vha. widgetten 'Fremhæv feature-sider'.
+    sir_trevor:
+      blocks:
+        browse_block:
+          items:
+            one: "%{count} element"
+            other: "%{count} elementer"
+    contacts:
+      edit:
+        header: "Rediger kontaktpersoner"
+      new:
+        header: "Tilføj kontaktpersoner for udstillingen"
+      form:
+        name:
+          placeholder: Fornavn og efternavn
+        email:
+          placeholder: Gyldig e-mailadresse
+        title:
+          placeholder: Mest relevante stillingsbetegnelse for denne udstilling
+        location:
+          placeholder: Navn for bibliotek eller anden fysisk placering
+        telephone:
+          placeholder: Telefonnr. (kan udelades)
+    about_pages:
+      contacts_form:
+        header: Kontaktpersoner
+        contact:
+          legend: Informationer
+        instructions: >
+          Indtast informationer for hver relevant kontaktperson for denne udstilling.
+          Vælg de kontaktpersoner som du ønsker skal vises i sidebjælken på Om-siderne.
+          Træk-og-slip kontakterne for at ændre rækkefølgen i sidebjælken.
+      nav_link: Om
+      page_options:
+        published: "Offentliggjort" # Possibly no longer used
+      sidebar:
+        nav_link: Om
+      contacts:
+        header: "Kontaktpersoner"
+    feature_pages:
+      nav_link: Forvaltede features
+      page_options:
+        published: "Offentliggør"
+    featured_images:
+      form: &featured_images_form
+        source:
+          header: "Billedkilde"
+          exhibit:
+            label: "Fra denne udstilling"
+            help: "Begynd at indtaste titlen for et udstillingselement for at finde et billede."
+          remote:
+            label: "Upload et billede"
+            header: "Beskåret billede"
+            help: >
+              Juster beskæringen for at definere billedarealet som skal anvendes
+              som miniaturebillede. Klik på "Gem ændringer" for a gemme beskæringen.
+      upload_form: *featured_images_form
+
+    resources:
+      new:
+        header: "Tilføj element"
+      form:
+        needs_provider: "Kunne ikke finde en passende importmetode" # "Could not find an appropriate importer"; what does "importer" mean?
+        has_provider: "Klar til at importere"
+        add_item: "Tilføj element"
+      upload:
+        csv:
+          success: "'%{file_name}' er blevet uploadet.  En e-mail sendes til dig så snart indekseringen er færdig."
+        new:
+          single_item_form: "Ét element"
+          multi_item_form: "Flere elementer via en CSV-fil"
+        error: "Der var problemer med at uploade dataene."
+        success: "Dataene blev uploadet korrekt."
+        form:
+          title: "Upload element"
+          add_item: "Tilføj element"
+          add_item_and_continue: "Tilføj element og tilføj igen"
+          full_title_tesim: "Titel"
+          url-field:
+            help: "Accepterede filtyper: %{extensions}"
+      csv_upload:
+        form:
+          title: "Upload flere elementer"
+          add_item: "Tilføj element"
+          help_html: "%{link}"
+          template: "Download skabelon" # "Download template"; is "skabelon" the best translation?
+          file_label: "CSV-fil"
+      json_upload:
+        form:
+          title: "Upload rå dokumenter"
+          add_item: "Tilføj element"
+          file_label: "JSON-fil"
+      bookmarklet:
+        instructions: "Træk denne knap til bogmærkebjælken i din browser"
+        bookmarklet: "%{application_name} widget"
+      reindexing_in_progress: "Alle ressourcer reindekseres"
+      external_resources_form:
+        title: "Fra ekstern ressource"
+    roles:
+      edit_fields:
+        invite_html: "Denne bruger er endnu ikke oprettet. Ønsker du at sende brugeren en %{link}?"
+        invite_link: invitation
+      index:
+        title: Konfigurering af site - Brugere
+        invite_pending: afventende # pending; other possible translations
+        header: Brugere
+        name: Brugernavn
+        email: "E-mailadresse"
+        role: "Rolle"
+        actions: "Handlinger"
+    sites:
+      new:
+        section: Administrer udstillinger
+        page_title: Opret en ny udstilling
+      edit:
+        section: Administrer udstillinger
+        page_title: Tilpas udseende
+        basic_settings:
+          heading: Titel
+        site_masthead:
+          heading: Masthead for site
+          help: >
+              Du kan udvælge og beskære et billedet til startsidens masthead-baggrund.
+              
+              For at anvende et billede som masthead-baggrund, bør du anvende et billede som
+              er mindst 120 pixel højt og 1200 pixel bredt. De bedste resultater fås med mindst
+              1800 pixel i bredden. Du kan beskære større billeder med værktøjet nedenfor.
+      edit_exhibits:
+        section: Administrer udstillinger
+        page_title: Udstillingsrækkefølge
+        instructions: Træk-og-slip udstillingerne nedenfor for at ændre rækkefølgen på udstillingernes startside.
+    searches: &search
+      nav_link: "Browse"
+      index:
+        header: "Browse"
+        title: "Forvaltning - Browse"
+        categories_header: "Browse-kategorier"
+        instructions: >
+          Anvend knappen "Gem søgning" på en side med søgeresultater for at skabe en ny browse-kategori.
+          Vælg kategorierne som du ønsker vist på 'browse landing page'. Træk-og-slip kategorier
+          for at ændre deres rækkefølge på den side.
+        no_saved_searches: >
+          Mens du er i forvaltningstilstand kan du kan gemme søgeresultater for at skabe
+          browse-kategorier som vil blive vist her.
+        not_searchable_html: >
+          Der kan p.t. ikke søges i denne udstilling. For at kunne udføre søgninger der
+          kan gemmes som browse-kategorier, skal du midlertidigt aktivere 'Vis søgning-boksen'
+          i sektionen 'Valgmuligheder' på indstillingssiden > %{href}
+      edit:
+        header: "Rediger browse-kategori"
+        title: "Forvaltning - Browse"
+        query_params: "Aktive søgebegrænsninger"
+      search:
+        item_count:
+          one: "%{count} element"
+          other: "%{count} elementer"
+        missing_description_html: "%{link} for at tilføje en beskrivelse."
+      form:
+        search_description: "Beskrivelse"
+        search_masthead: "Masthead"
+        search_thumbnail: "Miniaturebillede"
+        default_index_view_type: Standardvisning # Default view
+        masthead:
+          help: >
+            I stedet for standard masthead for denne browse-kategoris detaljeside kan du
+            udvælge og beskære et billede som skal anvendes som masthead.
+          help_secondary: >
+            Til et kategori-masthead skal du anvende et billede som er mindst 120 pixel højt
+            og 1200 pixel bredt. Det bedste resultat fås med et billede som er mindst
+            1800 pixel i bredden. Du kan beskære større billeder med værktøjet nedenfor.
+        thumbnail:
+          help: "You can select and crop an image to visually represent this search."
+    browse:
+      nav_link: "Browse"
+      index:
+        header: "Browse udstilling"
+      search:
+        item_count:
+          one: "%{count} element"
+          other: "%{count} elementer"
+    tags:
+      index:
+        title: "Forvaltning - Tags"
+        header: "Tags"
+        name: "Tag-navn"
+        taggings:
+          count: "Taggede elementer"
+        actions: "Handlinger"
+        no_tags: "Ingen elementer i denne udstilling er blevet tagget. Du kan tilføje tags til et element på siden Elementdetaljer når du er i forvaltningstilstand."
+    role:
+      admin: "Administrator"
+      curator: "Forvalter"
+    header_links:
+      login: "Log ind"
+      logout: "Log ud"
+      contact: "Feedback"
+    saved_search:
+      label: "Gem denne søgning"
+      title: "Søgningens titel"
+    shared:
+      report_a_problem:
+        title: Kontakt os
+    indexing_complete_mailer:
+      documents_indexed:
+        title: "Processering af din CSV-fil er netop afsluttet."
+        body:
+          one: "%{count} dokument er blevet indekseret fra CSV-filen og tilføjet udstillingen %{title}."
+          other: "%{count} dokumenter er blevet indekseret fra CSV-filen og tilføjet udstillingen %{title}."
+    versions:
+      undo: Ophæv ændringer
+      redo: Genindfør ændringer
+      undo_error: Ændringer kan ikke ophæves
+  shared:
+    share_follow:
+      share_follow: "Del & Følg"
+    site_sidebar:
+      header: Actions
+      create_exhibit: 'Skab en ny udstilling'
+      documentation: 'Forvalter-dokumentation'
