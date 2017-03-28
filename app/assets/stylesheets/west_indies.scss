@@ -1,11 +1,9 @@
-/*
-*= require bootstrap-tagsinput
-*= require jquery.jcrop
-*/
+@import 'west_indies/bootstrap_variables';
 @import 'spotlight/variables_bootstrap';
-@import "west_indies/variables";
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'blacklight/blacklight';
 @import 'sir-trevor/main';
+@import "west_indies/variables";
 @import 'spotlight/spotlight';
 @import "west_indies/west_indies";

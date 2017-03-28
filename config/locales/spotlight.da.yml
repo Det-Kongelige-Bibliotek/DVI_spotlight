@@ -81,9 +81,9 @@ da:
         invited: 'Brugeren er blevet inviteret.'
     label:
       solr_document:
-        exhibit_tag_list: "Tags" # maybe "Mærker", what does "Tags" mean in the context
+        exhibit_tag_list: "Tags"
       spotlight/exhibit:
-        tag_list: 'Tags' # same as above
+        tag_list: 'Tags'
       spotlight/filter:
         field: 'Felt'
         value: 'Værdi'
@@ -205,14 +205,14 @@ da:
           således at brugerne får mulighed for at afgrænse søgningen til et enkelt metadatafelt.
         instructions: >
           Hvis aktiveret, kan du nedenfor vælge de metadatafelter der er tilgængelige ved søgning.
-          Klik på et feltnavn for at redigere det viste navn. Træk-og-slip felter for at ændre rækkefølgen
+          Klik på et feltnavn for at redigere det viste navn. Træk-og-slip linjer for at ændre rækkefølgen
           som de vises i søgeboksens dropdown-menu.
         enable_feature: Vis søgeboks
       facets:
         help: >
-          Hvis sidebjælken er synlig kan brugerne anvende facetterne i sidebjælken til at afgrænse
+          Hvis sidebjælken er synlig, kan brugerne anvende facetterne i sidebjælken til at afgrænse
           søgninger. Nedenfor kan du vælge de facetter der skal være tilgængelige for søgning.
-          Klik på en facets feltnavn for at ændre navnet. Træk-og-slip fa for at ændre rækkefølgen
+          Klik på en facets feltnavn for at ændre navnet. Træk-og-slip for at ændre rækkefølgen
           i sidebjælken.
         sort_by:
           label: "Sorter efter:"
@@ -258,7 +258,7 @@ da:
           show: "Detaljer for elementer"
         instructions: >
           Vælg hvilke metadatafelter der skal vises på hver sidetype. Klik på et feltnavn
-          for at ændre navnet. Træk-og-slip felter for at ændre rækkefølgen for visning.
+          for at ændre navnet. Træk-og-slip linjer for at ændre rækkefølgen for visning.
     catalog:
       breadcrumb:
         index: 'Søgeresultater'
@@ -336,7 +336,7 @@ da:
           text: "Fri tekst"
     dashboards:
       show:
-        header: Dashboard
+        header: Kontrolpanel
       page_activity:
         header: Seneste site-oprettelsesaktivitet # Recent Site Building Activity
         new_feature_page: "Tilføj ny feature-side"
@@ -349,7 +349,7 @@ da:
         header: Senest opdaterede elementer
         no_documents: Der er ingen dokumenter i denne udstilling
       analytics:
-        header: "Analytics"
+        header: "Statistik"
         monthly_header: "Brugeraktivitet i den seneste måned"
         pageviews: "sidevisninger"
         users: "unikke besøg"
@@ -367,7 +367,7 @@ da:
         heading: Slet udstilling
         warning_html: >
           Denne handling kan ikke fortrydes. Sørg for at sikkerhedskopiere udstillingens indstillinger
-          og indhold vha. %{export_link} eksportfunktionen før du fortsætter.
+          og indhold vha. '%{export_link}' eksportfunktionen før du fortsætter.
       edit:
         header: Generelt
         basic_settings:
@@ -397,13 +397,13 @@ da:
         heading: Filtrer elementer
       import:
         heading: Importer data
-        instructions: Du kan importere en tidligere eksporteret JSON-fil fra denne webapplikation, og bruge den til at definere denne udstilling.
+        instructions: Du kan importere en tidligere eksporteret JSON-fil fra denne webapplikation og bruge den til at definere denne udstilling.
         button: Import data
       export:
         heading: Eksporter data
         instructions: >
           Du kan sikkerhedskopiere denne udstilling ved at eksportere dataene til en JSON-fil.
-          Derefter kan du importere den JSON-fil ind i en ny udstilling for at genskabe disse data eller
+          Derefter kan du importere denne JSON-fil ind i en ny udstilling for at genskabe disse data eller
           bruge dem som udgangspunkt for en ny udstilling.
         download: Eksporter data
       confirmation_status:
@@ -419,7 +419,7 @@ da:
       curated_features: "Forvaltede features" # "Curated Features"
     pages:
       order_pages:
-        pages_header: Særlige sider # Custom Pages; correct? no 1:1 translation of "custom" for Danish
+        pages_header: Andre sider # Custom Pages; correct? no 1:1 translation of "custom" for Danish
         instructions: Tilføj nye sider nedenfor. Træk-og-slip sider for at ændre rækkefølgen sidebjælken.
         new_page: "Tilføj ny side"
         save: "Gem"
@@ -470,7 +470,7 @@ da:
         location:
           placeholder: Navn for bibliotek eller anden fysisk placering
         telephone:
-          placeholder: Telefonnummer (kan udelades)
+          placeholder: Telefonnr. (kan udelades)
     about_pages:
       contacts_form:
         header: Kontaktpersoner
