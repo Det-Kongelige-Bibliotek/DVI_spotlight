@@ -56,6 +56,9 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "DVI_spotlight_#{Rails.env}"
   config.action_mailer.perform_caching = false
+  # Default mail parameters for production environment
+  config.action_mailer.default_url_options = { host: "http://spotlight-test-01.kb.dk"}
+  config.action_mailer.default_options = { from: "noreply@kb.dk" }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
