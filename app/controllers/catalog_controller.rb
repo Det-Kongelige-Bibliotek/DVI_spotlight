@@ -30,10 +30,12 @@ class CatalogController < ApplicationController
     # solr field configuration for search results/index views
     config.index.title_field = :full_title_tsim
 
-
-
-
-    config.add_search_field 'all_fields', label: 'Everything'
+    config.add_search_field 'all_fields', label: 'Everything' do |field|
+      # Free text search in these fields: title, creator, description
+      field.solr_local_parameters = {
+          :qf => 'cobject_title_ssi^100 full_title_tsim^90 creator_tsim^80 description_tsim^50'
+      }
+    end
 
     config.add_sort_field 'relevance', sort: 'score desc', label: 'Relevance'
 
