@@ -15,6 +15,10 @@ class ApplicationController < ActionController::Base
   #   { :locale => I18n.locale == I18n.default_locale ? nil : I18n.locale  } # If current locale is equal to the default locale do not show it in the url
   # end
 
+  def default_url_options(options = {})
+    { :locale => I18n.locale == I18n.default_locale ? nil : I18n.locale  } # If current locale is equal to the default locale do not show it in the url
+  end
+
   layout 'blacklight'
 
   protect_from_forgery with: :exception
