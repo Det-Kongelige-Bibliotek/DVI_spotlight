@@ -1,9 +1,13 @@
-
-
 ##
 # Simplified catalog controller
 class CatalogController < ApplicationController
   include Blacklight::Catalog
+
+  # Hack to get blacklight to URL decode id param before fetching from solr
+  before_action :url_decode_id, :only => [:show, :edit]
+  def url_decode_id
+    params[:id] = URI.unescape(params[:id])
+  end
 
   configure_blacklight do |config|
     config.show.oembed_field = :oembed_url_ssm
