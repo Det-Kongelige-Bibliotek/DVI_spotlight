@@ -19,7 +19,7 @@ color: $link-color !important;
 }
 
 // kbOSD
-   #kbOSDInstance {
+#kbOSDInstance {
        height: 680px;
        top: -20px;
 .kbOSDViewer .icon {
@@ -55,4 +55,10 @@ and (orientation: portrait) {
     .rotateRight, .rotateLeft, .fa-print{
         display:none !important;
     }
+}
+
+/* Align 'content' in landing page after hidding sidebar */
+#content #document{
+  margin-left: 0;
+  margin-right: 0;
 }
