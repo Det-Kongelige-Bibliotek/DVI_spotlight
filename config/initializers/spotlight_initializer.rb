@@ -58,7 +58,7 @@
 # Spotlight::Engine.config.ga_page_analytics_options = config.ga_analytics_options.merge(limit: 5)
 
 # Overwrite the autocomplete parameters
-Spotlight::Engine.config.default_autocomplete_params = { qf: 'id^1000 full_title_tsim^100 id_ng full_title_ng',
+Spotlight::Engine.config.default_autocomplete_params = { qf: 'full_title_tsim^100 id^100 description_tsim^50 id_ng full_title_ng',
                                        facet: false,
                                        'facet.field' => [] }
 
