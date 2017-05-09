@@ -1,9 +1,13 @@
-
-
 ##
 # Simplified catalog controller
 class CatalogController < ApplicationController
   include Blacklight::Catalog
+
+  # Hack to get blacklight to URL decode id param before fetching from solr
+  before_action :url_decode_id, :only => [:show, :edit]
+  def url_decode_id
+    params[:id] = URI.unescape(params[:id])
+  end
 
   configure_blacklight do |config|
     config.show.oembed_field = :oembed_url_ssm
@@ -30,10 +34,12 @@ class CatalogController < ApplicationController
     # solr field configuration for search results/index views
     config.index.title_field = :full_title_tsim
 
-
-
-
-    config.add_search_field 'all_fields', label: 'Everything'
+    config.add_search_field 'all_fields', label: 'Everything' do |field|
+      # Free text search in these fields: title, creator, description
+      field.solr_local_parameters = {
+          :qf => 'cobject_title_ssi^100 full_title_tsim^90 creator_tsim^80 description_tsim^50'
+      }
+    end
 
     config.add_sort_field 'relevance', sort: 'score desc', label: 'Relevance'
 
