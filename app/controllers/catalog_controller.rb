@@ -57,7 +57,9 @@ class CatalogController < ApplicationController
     config.add_facet_field 'readable_dat_string_tsim', :label => 'Oprindelsesdato', :single => true, :limit => 10
 
     config.add_facet_fields_to_solr_request!
-
+    # Hide bookmark from index page and landing page
+    config.index.document_actions.delete(:bookmark)
+    config.show.document_actions.delete(:bookmark)
 
 
   end
