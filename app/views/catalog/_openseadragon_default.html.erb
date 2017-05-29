@@ -1,43 +1,46 @@
 <div>
-<% image = document.to_openseadragon(blacklight_config.view_config(:show)) %>
-<% my_osd_config = {
-          id:"kbOSDInstance",
-          showNavigator:true,
-          rtl:false,
-          initialPage:1,
-          defaultZoomLevel:0,
-          sequenceMode:true,
-          indexPage:[],
-          tileSources: image
-} %>
-  <script type="text/javascript">
-//    var kbOSDconfig = [<%#= raw  my_osd_config.to_json %>];
-    var kbOSDconfig = [{
-      id: 'kbOSDInstance',
-      kbHeader: 'This is the title',
+  <% image = document.to_openseadragon(blacklight_config.view_config(:show)) %>
+  <% my_osd_config = {
+      id: "kbOSDInstance",
       showNavigator: true,
       rtl: false,
-      defaultZoomLevel: 0, // 0.34
+      initialPage: 1,
+      defaultZoomLevel: 0,
       sequenceMode: true,
-      showReferenceStrip:             false,
-      referenceStripPosition:         'OUTSIDE',
-      referenceStripScroll:           'vertical',
-      referenceStripWidth:            100,
-      referenceStripBackgroundColor:  'transparent',
       indexPage: [],
-      tileSources: <%= image.to_s.html_safe %>
+      tileSources: image
+  } %>
+  <script type="text/javascript">
+      //    var kbOSDconfig = [<%#= raw  my_osd_config.to_json %>];
+      var kbOSDconfig = [{
+          id: 'kbOSDInstance',
+          kbHeader: 'This is the title',
+          showNavigator: true,
+          rtl: false,
+          defaultZoomLevel: 0, // 0.34
+          sequenceMode: true,
+          showReferenceStrip: false,
+          referenceStripPosition: 'OUTSIDE',
+          referenceStripScroll: 'vertical',
+          referenceStripWidth: 100,
+          referenceStripBackgroundColor: 'transparent',
+          indexPage: [],
+          tileSources: <%= image.to_s.html_safe %>
 
-    }];
+      }];
 
-    if (kbOSDconfig[0].indexPage.length < 2) { // if there is only one element in the index, then don't show any index
-      delete kbOSDconfig[0].indexPage;
-    } else {
-      $.each(kbOSDconfig[0].indexPage, function (index, indexPage) {
-        if ('string' === typeof indexPage.page) {
-          index.page = parseInt(index.page, 10);
-        }
-      });
-    }
+      //Hide rotation and flip control
+      kbOSDconfig[0].showTransformationControl = false;
+
+      if (kbOSDconfig[0].indexPage.length < 2) { // if there is only one element in the index, then don't show any index
+          delete kbOSDconfig[0].indexPage;
+      } else {
+          $.each(kbOSDconfig[0].indexPage, function (index, indexPage) {
+              if ('string' === typeof indexPage.page) {
+                  index.page = parseInt(index.page, 10);
+              }
+          });
+      }
 
   </script>
 
@@ -51,12 +54,12 @@
                 <div class="kbOSDContent"></div>
               </div>
             </div>
-      </div>
+          </div>
         </div>
       </div>
 
   <% end %>
 
-<script src="http://static.kb.dk/kbOpenSeadragon/2.2.0/js/KbOSD_bundle_min.js"></script>
+  <script src="http://static.kb.dk/kbOpenSeadragon/2.2.0/js/KbOSD_bundle_min.js"></script>
 
 </div>
