@@ -104,6 +104,13 @@ da:
     help:
       spotlight/exhibit:
         tag_list: "Indtast tags adskilt af kommaer."
+  activemodel:
+    errors:
+      models:
+        spotlight/contact_form:
+          attributes:
+            email:
+              invalid: "Ugyldig emailadresse."
   blacklight:
     search:
       fields:
