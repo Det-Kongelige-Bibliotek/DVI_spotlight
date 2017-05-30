@@ -104,6 +104,13 @@ en:
     help:
       spotlight/exhibit:
         tag_list: "Enter tags separated by commas."
+  activemodel:
+    errors:
+      models:
+        spotlight/contact_form:
+          attributes:
+            email:
+              invalid: "Invalid email."
   blacklight:
     search:
       fields:
