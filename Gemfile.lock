@@ -40,12 +40,6 @@ GIT
       tophat
       underscore-rails (~> 1.6)
 
-GIT
-  remote: https://github.com/Det-Kongelige-Bibliotek/kbcookie.git
-  revision: aa797344e75246c609313ccad28ea7f0a40430ad
-  specs:
-    kbcookie (0.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -375,7 +369,6 @@ DEPENDENCIES
   high_voltage (~> 3.0.0)
   jbuilder (~> 2.5)
   jquery-rails
-  kbcookie (>= 0.0.0)!
   listen (~> 3.0.5)
   openseadragon (>= 0.3.2)
   puma (~> 3.0)
@@ -396,4 +389,4 @@ DEPENDENCIES
   xray-rails
 
 BUNDLED WITH
-   1.13.6
+   1.16.0

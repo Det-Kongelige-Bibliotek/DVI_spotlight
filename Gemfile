@@ -68,8 +68,6 @@ gem 'blacklight-oembed', '>= 0.1.0'
 gem 'devise_invitable'
 # makes pathes to static pages
 gem 'high_voltage', '~> 3.0.0'
-# kb cookie
-gem 'kbcookie', '>=0.0.0', :git => 'https://github.com/Det-Kongelige-Bibliotek/kbcookie.git'
 
 #Used in openseadragon
 gem 'font-awesome-rails'
